@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using PersonalBlog.Models;
 using System.Diagnostics;
 
@@ -18,6 +19,13 @@ namespace PersonalBlog.Controllers
             return View();
         }
 
+        [Authorize]
+        public IActionResult CreatePost()
+        {
+            return View();
+        }
+
+        [Authorize]
         public IActionResult Privacy()
         {
             return View();

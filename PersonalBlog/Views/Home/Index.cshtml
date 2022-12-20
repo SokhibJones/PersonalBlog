@@ -2,7 +2,19 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<!-- Jumbotron -->
+<div class="p-5 text-center bg-image rounded-3" style="
+    background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/041.webp');
+    height: 400px;
+  ">
+    <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+        <div class="d-flex justify-content-center align-items-center p-5">
+            <div class="text-white">
+                <h4 class="mb-3">Welcome to web reviews portal</h4>
+                <h1 class="mb-3">What's on your mind today?</h1>                
+                <a class="btn btn-outline-light btn-lg" asp-controller="Home" asp-action="CreatePost" role="button">Create a review</a>
+            </div>
+        </div>
+    </div>
 </div>
+<!-- Jumbotron -->
